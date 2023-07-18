@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CityController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArtCategoryController;
@@ -35,14 +36,15 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::resource('users',UserController::class,['except'=>['store','update','destroy']]);
-    Route::resource('roles',RoleController::class,['except'=>['store','update','destroy']]);
-    Route::resource('permissions',PermissionController::class,['except'=>['store','update','destroy']]);
-    Route::resource('admins',AdminController::class,['except'=>['store','update','destroy']]);
-    Route::resource('art_categories',ArtCategoryController::class,['except'=>['store','update','destroy']]);
-    Route::resource('artists',ArtistController::class,['except'=>['store','update','destroy']]);
-    Route::resource('materials',MaterialController::class,['except'=>['store','update','destroy']]);
-    Route::resource('terms',TermController::class,['except'=>['store','update','destroy']]);
-    Route::resource('collections',CollectionController::class,['except'=>['store','update','destroy']]);
-    Route::resource('collection_types',CollectionTypeController::class,['except'=>['store','update','destroy']]);
+    Route::resource('users', UserController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('roles', RoleController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('permissions', PermissionController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('admins', AdminController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('art_categories', ArtCategoryController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('artists', ArtistController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('materials', MaterialController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('terms', TermController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('collections', CollectionController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('collection_types', CollectionTypeController::class, ['except' => ['store', 'update', 'destroy']]);
+    Route::resource('cities', CityController::class, ['except' => ['store', 'update', 'destroy']]);
 });
