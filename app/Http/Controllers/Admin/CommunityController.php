@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Community;
 use Illuminate\Http\Request;
 
 class CommunityController extends Controller
@@ -12,7 +13,7 @@ class CommunityController extends Controller
      */
     public function index()
     {
-        //
+        return view('communities.index');
     }
 
     /**
@@ -20,7 +21,8 @@ class CommunityController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('communities.create');
     }
 
     /**
@@ -42,9 +44,9 @@ class CommunityController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Community $community)
     {
-        //
+        return view('communities.edit', compact('community'));
     }
 
     /**

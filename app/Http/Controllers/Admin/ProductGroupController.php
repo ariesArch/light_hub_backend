@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ProductGroup;
 use Illuminate\Http\Request;
 
 class ProductGroupController extends Controller
@@ -12,7 +13,7 @@ class ProductGroupController extends Controller
      */
     public function index()
     {
-        //
+        return view('product_groups.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class ProductGroupController extends Controller
      */
     public function create()
     {
-        //
+        return view('product_groups.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class ProductGroupController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(ProductGroup $productGroup)
     {
-        //
+        return view('product_groups.edit', compact('productGroup'));
     }
 
     /**

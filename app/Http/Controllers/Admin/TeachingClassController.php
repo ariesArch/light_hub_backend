@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\TeachingClass;
 use Illuminate\Http\Request;
 
 class TeachingClassController extends Controller
@@ -12,7 +13,7 @@ class TeachingClassController extends Controller
      */
     public function index()
     {
-        //
+        return view('teaching_classes.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class TeachingClassController extends Controller
      */
     public function create()
     {
-        //
+        return view('teaching_classes.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class TeachingClassController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(TeachingClass $teachingClass)
     {
-        //
+        return view('teaching_classes.edit', compact('teachingClass'));
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Page;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -12,7 +13,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class PageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Page $page)
     {
-        //
+        return view('pages.edit', compact('page'));
     }
 
     /**

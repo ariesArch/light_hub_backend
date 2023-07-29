@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ClassCategory;
 use Illuminate\Http\Request;
 
 class ClassCategoryController extends Controller
@@ -12,7 +13,7 @@ class ClassCategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('class_categories.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class ClassCategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('class_categories.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class ClassCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(ClassCategory $classCategory)
     {
-        //
+        return view('class_categories.edit', compact('classCategory'));
     }
 
     /**

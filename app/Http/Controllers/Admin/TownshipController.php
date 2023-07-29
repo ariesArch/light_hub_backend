@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Township;
 use Illuminate\Http\Request;
 
 class TownshipController extends Controller
@@ -12,7 +13,7 @@ class TownshipController extends Controller
      */
     public function index()
     {
-        //
+        return view('townships.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class TownshipController extends Controller
      */
     public function create()
     {
-        //
+        return view('townships.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class TownshipController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Township $township)
     {
-        //
+        return view('townships.edit', compact('township'));
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\CommunityCategory;
 use Illuminate\Http\Request;
 
 class CommunityCategoryController extends Controller
@@ -12,7 +13,7 @@ class CommunityCategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('community_categories.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class CommunityCategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('community_categories.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class CommunityCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(CommunityCategory $communityCategory)
     {
-        //
+        return view('community_categories.edit', compact('communityCategory'));
     }
 
     /**
@@ -58,8 +59,9 @@ class CommunityCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(CommunityCategory $communityCategory)
     {
-        //
+        // $communityCategory->delete();
+        // return view('community_categories.index');
     }
 }

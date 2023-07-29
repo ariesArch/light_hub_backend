@@ -2,10 +2,34 @@
 
 namespace App\Models;
 
+use App\Support\HasAdvancedFilter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class TeachingClass extends Model
 {
     use HasFactory;
+    use HasAdvancedFilter;
+
+    protected $fillable = [
+        'name',
+        'description',
+    ];
+
+    public $orderable = [
+        'id',
+        'name',
+        'description',
+    ];
+
+    public $filterable = [
+        'id',
+        'name',
+        'description'
+    ];
+
+    public function page()
+    {
+        return $this->belongsTo(Page::class);
+    }
 }

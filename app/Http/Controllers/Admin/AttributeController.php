@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Attribute;
 use Illuminate\Http\Request;
 
 class AttributeController extends Controller
@@ -12,7 +13,7 @@ class AttributeController extends Controller
      */
     public function index()
     {
-        //
+        return view('attributes.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class AttributeController extends Controller
      */
     public function create()
     {
-        //
+        return view('attributes.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class AttributeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Attribute $attribute)
     {
-        //
+        return view('attributes.edit', compact('attribute'));
     }
 
     /**

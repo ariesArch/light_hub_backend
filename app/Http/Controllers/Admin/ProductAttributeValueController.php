@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ProductAttributeValue;
 use Illuminate\Http\Request;
 
 class ProductAttributeValueController extends Controller
@@ -12,7 +13,7 @@ class ProductAttributeValueController extends Controller
      */
     public function index()
     {
-        //
+        return view('product_attribute_values.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class ProductAttributeValueController extends Controller
      */
     public function create()
     {
-        //
+        return view('product_attribute_values.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class ProductAttributeValueController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(ProductAttributeValue $productAttributeValue)
     {
-        //
+        return view('product_attribute_values.edit', compact('productAttributeValue'));
     }
 
     /**
