@@ -5,6 +5,8 @@ namespace App\Http\Livewire\Township;
 use App\Models\City;
 use App\Models\Township;
 use Livewire\Component;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
+
 
 class TownshipForm extends Component
 {
@@ -21,8 +23,9 @@ class TownshipForm extends Component
     {
         return [
             'township.name' => ['required', 'unique:townships,name,'],
-            'township.slug' => ['required', 'unique:townships,slug,'],
+            // 'township.slug' => ['required', 'unique:townships,slug,'],
             'township.city_id' => ['required'],
+            'township.delivery_fee' => ['required'],
         ];
     }
 

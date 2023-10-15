@@ -29,6 +29,8 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             ProductAttributeValueSeeder::class,
             VariationSeeder::class,
+            StatusSeeder::class,
+            LogSeeder::class,
         ]);
     }
 }

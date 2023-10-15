@@ -5,10 +5,10 @@
                 <x-molecules.input-area model="community.name" id="community-name" type="text" label="Name">
                 </x-molecules.input-area>
             </x-organisms.form-col-group>
-            <x-organisms.form-col-group>
+            {{-- <x-organisms.form-col-group>
                 <x-molecules.input-area model="community.slug" id="community-slug" type="text" label="Slug">
                 </x-molecules.input-area>
-            </x-organisms.form-col-group>
+            </x-organisms.form-col-group> --}}
             <x-organisms.form-col-group>
                 <x-molecules.select-box label="Category" :datas="$communityCategory" model="community.community_category_id">
                 </x-molecules.select-box>

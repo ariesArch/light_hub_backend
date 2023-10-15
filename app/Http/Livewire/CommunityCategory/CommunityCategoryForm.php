@@ -19,7 +19,7 @@ class CommunityCategoryForm extends Component
     {
         return [
             'communityCategory.name' => ['required'],
-            'communityCategory.slug' => ['required']
+            // 'communityCategory.slug' => ['required']
         ];
     }
 

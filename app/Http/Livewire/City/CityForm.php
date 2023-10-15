@@ -18,7 +18,7 @@ class CityForm extends Component
     {
         return [
             'city.name' => ['required'],
-            'city.slug' => ['required']
+            // 'city.slug' => ['required']
         ];
     }
     /**

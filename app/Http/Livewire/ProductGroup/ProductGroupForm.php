@@ -18,7 +18,7 @@ class ProductGroupForm extends Component
     {
         return [
             'productGroup.name' => ['required'],
-            'productGroup.slug' => ['required']
+            // 'productGroup.slug' => ['required']
         ];
     }
     /**

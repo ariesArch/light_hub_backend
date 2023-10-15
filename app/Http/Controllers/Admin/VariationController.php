@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Variation;
 use Illuminate\Http\Request;
 
 class VariationController extends Controller
@@ -12,7 +13,7 @@ class VariationController extends Controller
      */
     public function index()
     {
-        //
+        return view('variations.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class VariationController extends Controller
      */
     public function create()
     {
-        //
+        return view('variations.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class VariationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Variation $variation)
     {
-        //
+        return view('variations.index',compact('variation'));
     }
 
     /**

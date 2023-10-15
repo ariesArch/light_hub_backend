@@ -20,6 +20,10 @@
                 City_id
                 @include('components.atoms.th-sort', ['field' => 'city'])
             </x-atoms.th>
+            <x-atoms.th>
+                Delivery Fee
+                @include('components.atoms.th-sort', ['field' => 'delivery_fee'])
+            </x-atoms.th>
             <x-atoms.th>Creation Date</x-atoms.th>
             <x-atoms.th>Action</x-atoms.th>
         </x-slot>
@@ -30,6 +34,7 @@
                 <x-atoms.td>{{$township->name}}</x-atoms.td>
                 <x-atoms.td>{{$township->slug}}</x-atoms.td>
                 <x-atoms.td>{{$township->city->name}}</x-atoms.td>
+                <x-atoms.td>{{$township->delivery_fee}}</x-atoms.td>
                 <x-atoms.td>{{$township->created_at}}</x-atoms.td>
                 <x-atoms.td-action name="townships" :id="$township->id" />
             </tr>

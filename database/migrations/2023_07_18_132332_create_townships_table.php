@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('slug')->unique();
+            $table->string('delivery_fee');
             $table->foreignId('city_id')->constrained();
             $table->timestamps();
             $table->softDeletes();

@@ -22,8 +22,8 @@ class PhotoManagement
         Storage::disk('s3')->putFileAs($imgPath, $image, $filename, 'public');
         $photo_url = Storage::disk('s3')->url($imgPath . '/' . $filename);
 
-        list($width, $height) = getimagesize($photo_url);
-        $aspect_ratio = (float) $height / (float) $width;
+        // list($width, $height) = getimagesize($photo_url);
+        $aspect_ratio = (float) 1280 / (float) 720;
         $thumb_width = 480; #The width of image we want to set for thumbnail
         $thumb_height = (int) ($thumb_width * $aspect_ratio);
 
@@ -71,7 +71,7 @@ class PhotoManagement
             Storage::disk('s3')->putFileAs($imgPath, $image, $filename, 'public');
             $photo_url = Storage::disk('s3')->url($imgPath . '/' . $filename);
 
-            list($width, $height) = getimagesize($photo_url);
+            // list($width, $height) = getimagesize($photo_url);
             $aspect_ratio = (float) $height / (float) $width;
             $thumb_width = 480; #The width of image we want to set for thumbnail
             $thumb_height = (int) ($thumb_width * $aspect_ratio);

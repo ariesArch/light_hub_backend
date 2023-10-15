@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Society;
 use Illuminate\Http\Request;
 
 class SocietyController extends Controller
@@ -12,7 +13,7 @@ class SocietyController extends Controller
      */
     public function index()
     {
-        //
+        return view('societies.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class SocietyController extends Controller
      */
     public function create()
     {
-        //
+        return view('societies.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class SocietyController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Society $society)
     {
-        //
+        return view('societies.edit', compact('society'));
     }
 
     /**

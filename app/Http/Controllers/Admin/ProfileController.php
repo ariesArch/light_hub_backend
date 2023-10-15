@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Profile;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -12,7 +13,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        //
+        return view('profiles.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+        return view('profiles.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class ProfileController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Profile $profile)
     {
-        //
+        return view('profiles.edit', compact('profile'));
     }
 
     /**

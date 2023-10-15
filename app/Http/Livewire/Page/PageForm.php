@@ -24,7 +24,7 @@ class PageForm extends Component
     {
         return [
             'page.name' => ['required'],
-            'page.slug' => ['required'],
+            // 'page.slug' => ['required'],
             'page.community_category_id' => ['required'],
             'page.community_id' => ['required'],
         ];

@@ -17,7 +17,7 @@ class AttributeForm extends Component
     {
         return [
             'attribute.name' => ['required'],
-            'attribute.slug' => ['required'],
+            // 'attribute.slug' => ['required'],
         ];
     }
     /**

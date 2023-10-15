@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\CategoryProduct;
 use Illuminate\Http\Request;
 
 class CategotyProductController extends Controller
@@ -12,7 +13,7 @@ class CategotyProductController extends Controller
      */
     public function index()
     {
-        //
+        return view('category_products.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class CategotyProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('category_products.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class CategotyProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(CategoryProduct $categoryProduct)
     {
-        //
+        return view('category_products.edit', compact('categoryProduct'));
     }
 
     /**

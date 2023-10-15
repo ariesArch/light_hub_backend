@@ -22,9 +22,9 @@ class AdminForm extends Component
         'admin.name' => ['required', 'string'],
         'admin.email' => ['required', 'string'],
         'admin.password' => [
-            'required',
-            'string',
-            'min:8',
+            // 'required',
+            // 'string',
+            // 'min:8',
         ],
        
     ];
@@ -39,6 +39,7 @@ class AdminForm extends Component
         $this->validate();
         $hashedPassword =Hash::make($this->admin->password);
         $this->admin->password = $hashedPassword;
+        dd($this->admin->password);
         $this->admin->save();
         return redirect()->route('admins.index');
      

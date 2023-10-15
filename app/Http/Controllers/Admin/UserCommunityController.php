@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\UserCommunity;
 use Illuminate\Http\Request;
 
 class UserCommunityController extends Controller
@@ -12,7 +13,7 @@ class UserCommunityController extends Controller
      */
     public function index()
     {
-        //
+        return view('user_communities.index');
     }
 
     /**
@@ -20,7 +21,7 @@ class UserCommunityController extends Controller
      */
     public function create()
     {
-        //
+        return view('user_communities.create');
     }
 
     /**
@@ -42,9 +43,9 @@ class UserCommunityController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(UserCommunity $userCommunity)
     {
-        //
+        return view('user_communities.edit',compact('userCommunity'));
     }
 
     /**

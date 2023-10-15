@@ -18,7 +18,7 @@
             </x-atoms.th>
             <x-atoms.th>
                 Community Category
-                @include('components.atoms.th-sort', ['field' => 'slug'])
+                @include('components.atoms.th-sort', ['field' => 'category'])
             </x-atoms.th>
             <x-atoms.th>Creation Date</x-atoms.th>
             <x-atoms.th>Action</x-atoms.th>

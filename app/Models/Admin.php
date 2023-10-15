@@ -70,4 +70,7 @@ class Admin extends Authenticatable
         'id',
         'name',
     ];
+    public function profile(){
+        return $this->morphOne(Profile::class, 'profileable');
+    }
 }

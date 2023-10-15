@@ -6,9 +6,13 @@
                 </x-molecules.input-area>
             </x-organisms.form-col-group>
             <x-organisms.form-col-group>
-                <x-molecules.input-area model="township.slug" id="township-slug" type="text" label="Slug">
+                <x-molecules.input-area model="township.delivery_fee" id="township-delivery_fee" type="text" label="Delivery Fee">
                 </x-molecules.input-area>
             </x-organisms.form-col-group>
+            {{-- <x-organisms.form-col-group>
+                <x-molecules.input-area model="township.slug" id="township-slug" type="text" label="Slug" @readonly(true)>
+                </x-molecules.input-area>
+            </x-organisms.form-col-group> --}}
             <x-organisms.form-col-group>
                 <x-molecules.select-box label="City" :datas="$cities" model="township.city_id">
                 </x-molecules.select-box>
