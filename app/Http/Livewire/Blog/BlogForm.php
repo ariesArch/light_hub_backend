@@ -50,7 +50,7 @@ class BlogForm extends Component
     public function submit(PhotoManagement $file, Request $request)
     {
         $this->validate();
-        
+
         $this->blog->save();
         // Log::info('BlogId' . print_r($this->blog->id , true));
 
@@ -59,7 +59,7 @@ class BlogForm extends Component
             // $this->blog->image = $photo['file_url'];
             $this->blog->update(['image' =>  $photo['file_url']]);
         }
-        return redirect()->route('blogs.index');
+        return redirect()->route('blogs.index')->with('success', 'Blog created!');
     }
 
     public function render()

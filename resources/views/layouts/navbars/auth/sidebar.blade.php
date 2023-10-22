@@ -194,10 +194,11 @@
             <div
               class="{{ (Request::is('users') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
-                class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('users') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
-
+              {{-- <i style="font-size: 1rem;"
+                class="fa-solid fa-user ps-2 pe-2 text-center text-dark {{ (Request::is('users') ? 'text-white' : 'text-dark') }} "
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  viewBox="0 0 24 24"><path class="fa-solid fa-user ps-2 pe-2 text-center text-dark {{ (Request::is('users') ? 'text-white' : 'text-dark') }} "
+                 fill="currentColor" d="M17 16q-1.25 0-2.125-.875T14 13q0-1.25.875-2.125T17 10q1.25 0 2.125.875T20 13q0 1.25-.875 2.125T17 16Zm0-2q.425 0 .713-.288T18 13q0-.425-.288-.713T17 12q-.425 0-.713.288T16 13q0 .425.288.713T17 14Zm-5 9q-.425 0-.713-.288T11 22v-1.9q0-.525.25-.988t.7-.737q.8-.475 1.35-.663t1.475-.337q.3-.05.6.013t.5.287L17 19l1.1-1.325q.2-.25.5-.3t.6 0q.925.15 1.475.338t1.35.662q.45.275.713.738T23 20.1V22q0 .425-.288.713T22 23H12Zm.975-2h3.075l-1.35-1.65q-.45.125-.875.325t-.85.425v.9Zm4.975 0H21v-.9q-.4-.25-.825-.438t-.875-.312L17.95 21Zm-1.9 0Zm1.9 0ZM17 13ZM5 19V5v3.425V8v11Zm0 2q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v5q-.4-.5-.875-.95T19 8.45V5H5v14h4.15q-.075.275-.113.55T9 20.1v.9H5ZM8 9h6q.65-.5 1.425-.75T17 8q0-.425-.288-.713T16 7H8q-.425 0-.713.288T7 8q0 .425.288.713T8 9Zm0 4h4q0-.525.113-1.025t.312-.975H8q-.425 0-.713.288T7 12q0 .425.288.713T8 13Zm0 4h2.45q.275-.225.588-.4t.637-.325V16q0-.4-.213-.7t-.787-.3H8q-.425 0-.713.288T7 16q0 .425.288.713T8 17Z"/></svg>
             </div>
             <span
               class="{{ (Request::is('rtl') ? 'mr-1' : 'ml-1') }} duration-300 opacity-100 pointer-events-none ease-soft">User
@@ -214,9 +215,10 @@
             <div
               class="{{ (Request::is('user_communities') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
+              {{-- <i style="font-size: 1rem;"
                 class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('user_communities') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('user_communities') ? 'text-white' : 'text-dark') }} " fill="currentColor" d="M17 15q-1.05 0-1.775-.725T14.5 12.5q0-1.05.725-1.775T17 10q1.05 0 1.775.725T19.5 12.5q0 1.05-.725 1.775T17 15Zm-4 5q-.425 0-.713-.288T12 19v-.4q0-.6.313-1.113t.887-.737q.9-.375 1.863-.563T17 16q.975 0 1.938.188t1.862.562q.575.225.888.738T22 18.6v.4q0 .425-.288.713T21 20h-8Zm-3-8q-1.65 0-2.825-1.175T6 8q0-1.65 1.175-2.825T10 4q1.65 0 2.825 1.175T14 8q0 1.65-1.175 2.825T10 12Zm-7 8q-.425 0-.713-.288T2 19v-1.8q0-.85.425-1.563T3.6 14.55q1.5-.75 3.112-1.15T10 13q.875 0 1.75.15t1.75.35l-1.7 1.7q-.625.625-1.213 1.275T10 18v.975q0 .3.113.563t.362.462H3Z"/></svg>
 
             </div>
             <span
@@ -233,9 +235,10 @@
             <div
               class="{{ (Request::is('cities') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
+              {{-- <i style="font-size: 1rem;"
                 class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('cities') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="text-center text-dark {{ (Request::is('cities') ? 'text-white' : 'text-dark') }} " fill="currentColor" d="M3 21V7h6V5l3-3l3 3v6h6v10H3Zm2-2h2v-2H5v2Zm0-4h2v-2H5v2Zm0-4h2V9H5v2Zm6 8h2v-2h-2v2Zm0-4h2v-2h-2v2Zm0-4h2V9h-2v2Zm0-4h2V5h-2v2Zm6 12h2v-2h-2v2Zm0-4h2v-2h-2v2Z"/></svg>
 
             </div>
             <span
@@ -252,9 +255,10 @@
             <div
               class="{{ (Request::is('townships') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
+              {{-- <i style="font-size: 1rem;"
                 class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('townships') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 640 512"><path class="text-center text-dark {{ (Request::is('townships') ? 'text-white' : 'text-dark') }} " fill="currentColor" d="M480 48c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v48h-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24v72h-64V24c0-13.3-10.7-24-24-24S64 10.7 64 24v72H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h544c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zm-336 48h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm-112-16c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zm432-144c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32zm-304-80v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zm-144-16c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32zm144 144c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zm-144 16H80c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z"/></svg>
 
             </div>
             <span
@@ -277,9 +281,10 @@
             <div
               class="{{ (Request::is('teaching_classes') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
+              {{-- <i style="font-size: 1rem;"
                 class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('teaching_classes') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path class="text-center text-dark {{ (Request::is('teaching_classes') ? 'text-white' : 'text-dark') }} " fill="currentColor" d="M120.998 40.998v37.943C136.22 89.471 146 109.278 146 131.001c0 13.71-3.901 26.65-10.598 36.985c3.465 1.35 7.106 2.85 10.15 4.172l122.352-22.783l5.918 54.842l-111.748 23.219c-.862 16.261-2.45 32.262-5.289 51.566h336.217V40.998zM96 88.998c-16.595 0-32.002 17.747-32.002 42.004c0 24.257 15.407 42.002 32.002 42.002c16.595 0 32.002-17.745 32.002-42.002S112.595 88.998 96 88.998zm156.096 81.629l-108.592 20.22c-14.24-5.602-4.956-3.035-21.469-8.517c-7.476 5.469-16.33 8.672-26.035 8.672c-8.6 0-16.53-2.523-23.428-6.9c-8.59 3.564-17.655 8.09-25.736 12.654c-12.992 7.338-23.722 13.211-27.838 16.033v130.213h20.004V232h17.996v263.002h30.004V326h17.996v169.002h26.004v-171.84l.154-.824c9.514-50.64 12.588-77.384 13.461-109.656l109.56-22.766zm-98.153 126.375c-.952 5.682-1.991 11.64-3.146 17.996H478v-17.996zM208 344.998c-16.595 0-32.002 17.747-32.002 42.004c0 18.198 8.67 32.73 20.01 38.855c3.599-1.662 7.482-2.706 11.68-2.851c4.633-.16 8.98.767 13.052 2.42c10.968-6.352 19.262-20.63 19.262-38.424c0-24.257-15.407-42.004-32.002-42.004zm112 0c-16.595 0-32.002 17.747-32.002 42.004c0 18.198 8.67 32.73 20.01 38.855c3.599-1.662 7.482-2.706 11.68-2.851c4.633-.16 8.98.767 13.052 2.42c10.968-6.352 19.262-20.63 19.262-38.424c0-24.257-15.407-42.004-32.002-42.004zm112 0c-16.595 0-32.002 17.747-32.002 42.004c0 18.198 8.67 32.73 20.01 38.855c3.599-1.662 7.482-2.706 11.68-2.851c4.633-.16 8.98.767 13.052 2.42c10.968-6.352 19.262-20.63 19.262-38.424c0-24.257-15.407-42.004-32.002-42.004zm-223.688 95.996c-3.844.133-8.907 2.93-14.3 8.785c-5.394 5.855-10.696 14.25-15.125 22.76c-4.226 8.12-7.609 16.16-10.06 22.463h85.339c-3.04-6.436-7.138-14.549-12.133-22.711c-5.298-8.658-11.511-17.138-17.668-22.957c-6.157-5.819-11.8-8.487-16.053-8.34zm112 0c-3.844.133-8.907 2.93-14.3 8.785c-5.394 5.855-10.696 14.25-15.125 22.76c-4.226 8.12-7.609 16.16-10.06 22.463h85.339c-3.04-6.436-7.138-14.549-12.133-22.711c-5.298-8.658-11.511-17.138-17.668-22.957c-6.157-5.819-11.8-8.487-16.052-8.34zm112 0c-3.844.133-8.907 2.93-14.3 8.785c-5.394 5.855-10.696 14.25-15.125 22.76c-4.226 8.12-7.609 16.16-10.06 22.463h85.339c-3.04-6.436-7.138-14.549-12.133-22.711c-5.298-8.658-11.511-17.138-17.668-22.957c-6.157-5.819-11.8-8.487-16.052-8.34z"/></svg>
 
             </div>
             <span
@@ -324,9 +329,10 @@
             <div
               class="{{ (Request::is('products') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
+              {{-- <i style="font-size: 1rem;"
                 class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('products') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="text-lg text-center text-dark {{ (Request::is('products') ? 'text-white' : 'text-dark') }} " fill="currentColor" d="M7 22q-.825 0-1.413-.588T5 20q0-.825.588-1.413T7 18q.825 0 1.413.588T9 20q0 .825-.588 1.413T7 22Zm10 0q-.825 0-1.413-.588T15 20q0-.825.588-1.413T17 18q.825 0 1.413.588T19 20q0 .825-.588 1.413T17 22ZM12 9.5q-.425 0-.713-.288T11 8.5q0-.425.288-.713T12 7.5q.425 0 .713.288T13 8.5q0 .425-.288.713T12 9.5ZM11 6V1h2v5h-2ZM7 17q-1.125 0-1.725-.988T5.25 14.05L6.6 11.6L3 4H1V2h3.275l4.25 9h7.025l3.875-7l1.75.95l-3.875 7q-.275.5-.725.775T15.55 13H8.1L7 15h12v2H7Z"/></svg>
 
             </div>
             <span
@@ -343,9 +349,10 @@
             <div
               class="{{ (Request::is('product_groups') ? ' bg-gradient-fuchsia' : '') }} shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
 
-              <i style="font-size: 1rem;"
+              {{-- <i style="font-size: 1rem;"
                 class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('product_groups') ? 'text-white' : 'text-dark') }} "
-                aria-hidden="true"></i>
+                aria-hidden="true"></i> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 36 36"><path class="text-center {{ (Request::is('product_groups') ? 'text-white' : 'text-dark') }} " fill="#888888" d="m33.53 21.58l-4.94-2.83v-5.66a1 1 0 0 0-.51-.87L22.64 9.1a1 1 0 0 0-1 0l-5.44 3.12a1 1 0 0 0-.51.87v5.66l-4.94 2.83a1 1 0 0 0-.5.87v6.24a1 1 0 0 0 .5.86l5.45 3.12a1 1 0 0 0 1 0l4.95-2.83l4.95 2.83a1 1 0 0 0 .5.14a1 1 0 0 0 .49-.14l5.45-3.12a1 1 0 0 0 .5-.86v-6.24a1 1 0 0 0-.51-.87ZM22.14 11.12l4.45 2.55V19l-4.46 2.56l-4.44-2.6v-5.29Zm-5.45 19.53l-4.44-2.54V23l4.68-2.68l4.4 2.57V28ZM32 28.11l-4.44 2.54L22.93 28v-5.07l4.46-2.57L32 23Z" class="clr-i-outline clr-i-outline-path-1"/><path fill="#888888" d="M7 27.43a1 1 0 0 1-1-1V19.9a1 1 0 0 1 .5-.9l4.95-2.83v-5.63a1 1 0 0 1 .5-.87l5.21-3a1 1 0 0 1 1.37.37a1 1 0 0 1-.38 1.37l-4.7 2.68v5.66a1 1 0 0 1-.51.87L8 20.48v5.95a1 1 0 0 1-1 1Z" class="clr-i-outline clr-i-outline-path-2"/><path fill="#888888" d="M3 25.05a1 1 0 0 1-1-1v-6.52a1 1 0 0 1 .5-.86l5-2.84V8.17a1 1 0 0 1 .5-.86l5.25-3a1 1 0 0 1 1 1.74l-4.8 2.7v5.66a1 1 0 0 1-.51.87L4 18.11v5.94a1 1 0 0 1-1 1Z" class="clr-i-outline clr-i-outline-path-3"/><path fill="none" d="M0 0h36v36H0z"/></svg>
 
             </div>
             <span

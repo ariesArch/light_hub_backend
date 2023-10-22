@@ -23,6 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
     <!-- AlpineJS -->
     <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.3/cdn.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@2.8.2/dist/alpine.min.js"></script>
+
     <!-- Main Styling -->
     <link href="{{ asset('assets') }}/css/styles.css?v=1.0.3" rel="stylesheet" />
 

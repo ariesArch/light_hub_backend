@@ -1,6 +1,6 @@
 <x-pages.list-container name_prop="blog">
     <div class="flex flex-wrap p-3 mb-0 bg-white border-b-1 border-b-solid rounded-t-2xl border-b-transparent">
-        <x-atoms.input wire:model.debounce.300ms="search" class="w-1/2"/>
+        <x-atoms.input wire:model.debounce.300ms="search" placeholder="Search" class="w-1/2"/>
     </div>
     <x-templates.table-wrapper>
         <x-slot name="table_head">
