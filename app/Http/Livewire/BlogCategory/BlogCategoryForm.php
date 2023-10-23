@@ -21,7 +21,7 @@ class BlogCategoryForm extends Component
             'blog_category.description' => ['required'],
         ];
     }
-     /**
+    /**
      * Realtime validation
      */
     public function updated($propertyName)

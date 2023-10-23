@@ -17,6 +17,10 @@
                 @include('components.atoms.th-sort', ['field' => 'slug'])
             </x-atoms.th>
             <x-atoms.th>
+                Active
+                @include('components.atoms.th-sort', ['field' => 'slug'])
+            </x-atoms.th>
+            <x-atoms.th>
                 Category
                 @include('components.atoms.th-sort', ['field' => 'categoty_id'])
             </x-atoms.th>
@@ -29,6 +33,9 @@
                 <x-atoms.td>{{$blog->id}}</x-atoms.td>
                 <x-atoms.td>{{$blog->title}}</x-atoms.td>
                 <x-atoms.td>{{$blog->slug}}</x-atoms.td>
+                <x-atoms.td>
+                    <livewire:button.feature :model="$blog" field="is_published" :key="'button.feature'.$blog->id"/>
+                </x-atoms.td>
                 <x-atoms.td>{{$blog->blog_category->name}}</x-atoms.td>
                 <x-atoms.td>{{$blog->created_at}}</x-atoms.td>
                 <x-atoms.td-action name="blogs" :id="$blog->id" />
