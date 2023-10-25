@@ -14,6 +14,8 @@ class BlogList extends Component
     public array $orderable;
     public string $search = '';
     public array $selected = [];
+    public $filter_option = 'all';
+
     protected $queryString = [
         'search' => [
             'except' => '',
@@ -38,7 +40,12 @@ class BlogList extends Component
             'order_column'    => $this->sortBy,
             'order_direction' => $this->sortDirection,
         ]);
-        $blogs = $query->paginate($this->perPage);
+
+        $blogs = $query->when($this->filter_option !== 'all', function ($query) {
+            return $query->where('is_published', $this->filter_option);
+        })->paginate($this->perPage);
+
+
         return view('livewire.blog.blog-list', compact('query', 'blogs'));
     }
 }

@@ -37,6 +37,7 @@ class Blog extends Model
 
     public $filterable = [
         'id',
+        'title',
         'slug'
     ];
 

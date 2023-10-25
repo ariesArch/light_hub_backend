@@ -10,7 +10,7 @@
                 </x-molecules.input-area>
             </x-organisms.form-col-group>
             <x-organisms.form-col-group wire:ignore>
-                <x-molecules.trix-area model="blog.description" id="blog-description" label="Enter Description">
+                <x-molecules.trix-area model="blog.description" id="blog-description" label="Enter Description" >
                 </x-molecules.trix-area>
             </x-organisms.form-col-group>
             {{-- <x-organisms.form-col-group>

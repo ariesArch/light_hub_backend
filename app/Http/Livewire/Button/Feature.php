@@ -21,6 +21,7 @@ class Feature extends Component
     {
         $this->model->setAttribute($this->field, $this->isActive);
         $this->model->save();
+        // return redirect()->route('blogs.index');
     }
 
     public function render()
